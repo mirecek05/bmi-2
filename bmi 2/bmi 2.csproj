@@ -6,4 +6,8 @@
     <RootNamespace>bmi_2</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="C:\Users\Obykuch\Desktop\BMI COUNTER NO LETTER.cs" Link="BMI COUNTER NO LETTER.cs" />
+  </ItemGroup>
+
 </Project>
