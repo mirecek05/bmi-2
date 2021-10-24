@@ -6,8 +6,8 @@ namespace bmi_2
     {
         static void Main(string[] args)
         {
-            string str_vyska;
-            string str_hmotnost;
+            double vyska;
+            double hmotnost;
             double bmi;
             
             
@@ -18,8 +18,7 @@ namespace bmi_2
                Console.WriteLine("--------------");
 
                Console.WriteLine("Zadej výšku(cm)");
-               str_vyska = Console.ReadLine();
-               double vyska = double.Parse(str_vyska);
+                double.TryParse(Console.ReadLine(), out vyska);
                if ((vyska >=250) || (vyska <=50))
                {
                 Console.WriteLine();
@@ -29,8 +28,7 @@ namespace bmi_2
                {
                   vyska = vyska / 100.0;
                   Console.WriteLine("Zadej hmotnost (Kg) : ");
-                  str_hmotnost = Console.ReadLine();
-                  double hmotnost = double.Parse(str_hmotnost);
+                    double.TryParse(Console.ReadLine(), out hmotnost);
                   if ((hmotnost >= 300) || (hmotnost <=10 ))
                   {
                     Console.WriteLine();
